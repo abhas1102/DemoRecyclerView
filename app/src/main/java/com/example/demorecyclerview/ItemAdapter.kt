@@ -16,7 +16,7 @@ class ItemAdapter(val context:Context, val items:ArrayList<String>):RecyclerView
 
     override fun onBindViewHolder(holder: ItemAdapter.ViewHolder, position: Int) {
         val item = items[position]
-        holder.tvItem.text = item
+        holder.viewItem.text = item
     }
 
     override fun getItemCount(): Int {
@@ -24,7 +24,7 @@ class ItemAdapter(val context:Context, val items:ArrayList<String>):RecyclerView
     }
 
     class ViewHolder(view:View):RecyclerView.ViewHolder(view) {
-        val tvItem = view.tvItem
+        val viewItem = view.tvItem
     }
 
 }
